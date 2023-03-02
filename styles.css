@@ -14,6 +14,7 @@
 h2 {
   font-size: medium;
   font-weight: 200;
+  color: blue; 
 }
 /* END SETUP */
 
@@ -27,15 +28,35 @@ h2 {
   margin-bottom: 5rem;
 }
 
+.label:hover {
+  /* background-color: yellow; */
+  color: orange; 
+  font-size: 30px; 
+} 
+
+
+.mexico-flag {
+  height: 300px;
+  width: 500px;
+  border-style: solid;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .twovert {
   height: 50%;
 }
 
 .threevert {
+  height: 33.3%;
 }
 
 .threehoriz {
   width: 33.3%;
+  display: grid; 
+  height: 100%
 }
 
 .narrow {
@@ -91,18 +112,40 @@ h2 {
   background-color: #000;
 }
 
+.red {
+  background-color: red;
+}
+
+#white {
+  background-color: white; 
+}
+
+.light-blue {
+  background-color: lightblue;
+}
+
+
 /* BEGIN QUESTION 2 */
 
 .thailand-red {
   /* TODO */
+  background-color: #B5002D;
+  height: 16.66% ;
+  width: inherit; 
 }
 
 .thailand-white {
   /* TODO */
+  background-color: white;
+  height: 16.66%;
+  width: inherit; 
 }
 
 .thailand-blue {
   /* TODO */
+  background-color: #2E2A4C;
+  height: 33.33%;
+  width: inherit; 
 }
 
 /* END QUESTION 2 */
@@ -130,6 +173,14 @@ h2 {
 
 .mexico-img {
   /* TODO */
+  display: flex; 
+  /* background-color: white; */
+  flex-direction: row;
+  background-image: url("eagle.png");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
 }
 
 .mexico-red {
@@ -150,11 +201,15 @@ h2 {
 .flag1 {
   background-color: red;
   /* TODO */
+  width: 515px; 
+  margin-right: 5px;
 }
 
 .flag2 {
   background-color: blue;
   /* TODO */
+  width: 515px; 
+  margin-left: 5px;
 }
 /* For padding practice */
 .padding-container {
@@ -162,4 +217,8 @@ h2 {
   background-color: lightblue;
   background-clip: content-box, padding-box;
   /* TODO */
+  padding-top: 30px;
+  padding-right: 30px; 
+  padding-bottom: 30px;
+  padding-left: 30px;
 }
